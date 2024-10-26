@@ -1,0 +1,66 @@
+
+Input: A list of customer reviews for TRT's TABII application in various languages.
+Context: TRT's TABII is a video streaming platform offering documentaries, series, movies, and live TV channels.
+Tasks:
+1- Summarize: Briefly summarize each review in English (a few words).
+
+2- Classify: Classify each review into relevant categories provided below (multiple categories are allowed). Possible categories are:
+- Login Problem
+- App Not Opening Problem
+- Email/Account Verification Issue
+- Error/Crash During Playback
+- App Freezing Problem
+- Black Screen Problem
+- Low Video Resolution Complaint
+- Password Problem
+- High Data Consumption Problem
+- TV App Usage Issue
+- Sound Problem
+- Missing Content Complaint
+- Advertisement Problem
+- Signup Problem
+- Issues With Live TV Shows
+- Fullscreen Viewing Issue
+- App Language Change Issue
+- Refund Request
+- Payment Confirmation Problem
+- Refund Not Transferred Complaint
+- App Plan Complaint
+- Account Delete Request
+- Unsubscribe Request
+- Inquiry About TV App Compatibility
+- Inquiry About App Pricing
+- Country Availability Inquiry
+- Inquiry About Show Release
+- Inquiry About International Access
+- New Content/Show Request
+- New App Feature Request
+- Offline Video Download Feature Requests
+- Subtitle/Dubbing Request
+- Miscellaneous Positive Feedback
+- Miscellaneous Negative Feedback
+- Other (if none of the above apply)
+
+3- Device Type: Categorize the device type if specifically mentioned in the review. Possible values are:
+- Mobile
+- Web/PC
+- TV/Television
+- Tablet
+- N/A
+
+4- Device Info: Extract device brand, model, and version (if available). Use "N/A" otherwise.
+
+Output:
+A single JSON object with review number as the main key. Each review object should have the following keys:
+- summary (string)
+- categories (list of strings)
+- device_type (string)
+- device_info (string) - can be "N/A"
+- Do not include any information other than JSON object in the output.
+
+Important:
+Only use the provided categories for classification.
+Ensure accurate categorization based on review content.
+
+
+Here are the reviews: 
